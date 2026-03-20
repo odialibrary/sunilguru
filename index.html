@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="https://blog.sunilguru.com/favicon.ico">
+<link rel="shortcut icon" href="https://blog.sunilguru.com/favicon.ico">
+<title>Sunil Guru | Profile</title>
+
+<meta name="description" content="Sunil Guru futuristic web designer portfolio with Bhagavad Gita project and OdiaBook PDF library">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400&family=Noto+Sans+Oriya:wght@500&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0a0f1c;
+color:white;
+font-family:Poppins;
+overflow-x:hidden;
+}
+
+/* background layers */
+
+#matrix{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-3;
+}
+
+#particles{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-2;
+}
+
+/* grid background */
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background-image:
+linear-gradient(rgba(0,247,255,0.08) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,247,255,0.08) 1px, transparent 1px);
+background-size:60px 60px;
+z-index:-1;
+}
+
+/* navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:25px 8%;
+}
+
+.logo{
+font-family:Orbitron;
+font-size:26px;
+background:linear-gradient(90deg,#00f7ff,#8b5cf6);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+/* hero */
+
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:100px 10%;
+}
+
+/* profile */
+
+.profile{
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(0,247,255,0.4);
+border-radius:20px;
+padding:40px;
+text-align:center;
+backdrop-filter:blur(6px);
+box-shadow:0 0 30px rgba(0,247,255,0.2);
+}
+
+.profile img{
+width:180px;
+height:170px;
+border-radius:50%;
+border:3px solid #00f7ff;
+margin-bottom:15px;
+}
+
+.profile h1{
+font-family:Orbitron;
+font-size:34px;
+}
+
+.profile p{
+opacity:.8;
+margin-top:8px;
+}
+
+/* social */
+
+.social{
+margin-top:18px;
+}
+
+.social a{
+color:white;
+font-size:22px;
+margin:10px;
+transition:.3s;
+}
+
+.social a:hover{
+color:#00f7ff;
+transform:scale(1.2);
+}
+
+/* section */
+
+.section-title{
+text-align:center;
+font-family:Orbitron;
+font-size:36px;
+margin:80px 0 40px;
+color:#00f7ff;
+}
+
+/* projects */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:35px;
+padding:0 8% 80px;
+}
+
+.project{
+background:#0f1629;
+border:1px solid rgba(0,247,255,0.3);
+border-radius:16px;
+overflow:hidden;
+transition:transform .3s, box-shadow .3s;
+transform-style:preserve-3d;
+}
+
+.project:hover{
+transform:rotateX(6deg) rotateY(-6deg) scale(1.05);
+box-shadow:0 0 35px rgba(0,247,255,0.7);
+}
+
+.project img{
+width:100%;
+}
+
+.project-content{
+padding:20px;
+}
+
+.project-content h3{
+font-family:Orbitron;
+margin-bottom:8px;
+}
+
+.project-content p{
+font-size:14px;
+opacity:.8;
+}
+
+/* neon buttons */
+
+.project-content a{
+
+display:inline-block;
+margin-top:12px;
+padding:8px 18px;
+background:#00f7ff;
+color:#000;
+border-radius:20px;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+
+}
+
+.project-content a:hover{
+
+box-shadow:
+0 0 10px #00f7ff,
+0 0 25px #00f7ff,
+0 0 50px #00f7ff;
+
+transform:scale(1.05);
+
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:40px;
+opacity:.7;
+}
+
+</style>
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div id="particles"></div>
+
+<nav>
+<div class="logo">SUNIL GURU</div>
+</nav>
+
+<section class="hero">
+
+<div class="profile">
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVj_q9tI6bolFMyDDsXMqS_1wAp9C8zvmRQ82dgNyPd5UtTFdYAzqDnNXtYadpbpsqzQBwukBt2eiipf0-NayXmBRCyd6cqgMyZXlNPdpFYY9jX_7hbyPY2Q9wKUGzSki3vz6bZfWmdLs5kQTCfBfChzYKPrgcN6WulDptMJ4AZUCyxUgnN6zXdc5Z7QY/s1060/IMG_20260315_161222.jpg">
+
+<h1>Sunil Guru</h1>
+
+<p>Web Developer</p>
+
+<div class="social">
+
+<a href="https://www.instagram.com/@sunil__guru/"><i class="fab fa-instagram"></i></a>
+<a href="https://m.facebook.com/@Sunilkumarguru/"><i class="fab fa-facebook"></i></a>
+<a href="https://x.com/Sunil__Guru"><i class="fab fa-x-twitter"></i></a>
+<a href="https://in.linkedin.com/in/sunilguru"><i class="fab fa-linkedin"></i></a>
+
+</div>
+
+</div>
+
+</section>
+
+<h2 class="section-title">MY PROJECTS</h2>
+
+<section class="projects">
+
+<div class="project">
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXcrbSKth96K4s27vpfozQqqZI7aCLXhowpeAiLTfBK88b-y25AIWUYX0ty7NoyGMS1QSQcW6G0ZJKZ7qYPvoz-qf2mW2PSn9AmVXqf2KYXl2pIMeTGqDoLROEw7jO5fpc7UD8GZQEruQ7xpHxu8h5lQWt42jle8xr-ZYu3AiE-UXKiD3Eu-L6M6uHahg/s500/book-page.jpg">
+
+<div class="project-content">
+
+<h3>OdiaBook PDF Library</h3>
+
+<p>Download Odia novels, literature and educational books.</p>
+
+<a href="https://odiabook.in" target="_blank">Visit Website</a>
+
+</div>
+
+</div>
+<div class="project">
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtaR9FPQP2s9ZnTjCchH7crJDDnaFx8I-E_-T9WmSHAoRtnpu6UZVw_bl_Xah2qDHeFaRdoCRknbPfngmSMkVnm1XyT7TBxflqDkGiW_o21lJC91QR5qNkGwug1fTdJvNTuIUu7X4izQBhlGhEybdsJNirkCbY7mBRUPFKbNM6kImYSKePYMiK-fuHWiI/s500/bhagavad-gita.jpg">
+
+<div class="project-content">
+
+<h3>Bhagavad Gita Knowledge Website</h3>
+
+<p>Download Bhagavad Gita PDF in Your Language.</p>
+
+<a href="https://bhagavadgita.neocities.org/">Open Website</a>
+
+</div>
+
+</div>
+<div class="project">
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmVixl8gSzGW3DQCrGxh7skH4c1E-nuXq1rMHiVKJWccNG4hyib3newt_kMEUjtnAG2NPfuy7ZkGLgbQvPpxkmrF8rRv8r__vNsiGv8cYfDz2Bsfj0eE6nS0bHDGjDiL9V_4ZHu_p5Iv6Ur8vOi7DQicalWKlUrPGPb_sGUJhyphenhyphenyqzsLJrPEYWJbdXR6EU/s3000/our-blog.jpg">
+
+<div class="project-content">
+
+<h3>Visit Our Odia Language Blog
+</h3>
+
+<p>Read the article written by me.</p>
+
+<a href="https://blog.sunilguru.com">Visit Website</a>
+
+</div>
+
+</div>
+
+
+</section>
+
+<footer>
+
+© 2026 Design By <a href="https://www.instagram.com/@sunil__guru/"><font color="red">Sunil Guru</font></a> – Handcrafted With <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCpJjzTnOGEK2A_I79XirxMqr0WeJym7xkb11rPzjGKWbJ_EHaSzE_1v46lsmOP1krkqHrkLT5-prW8p1i8hoiYpNwTpor4rn3fqq10UHc8cvtSloE1KlIIXcpEzE6BLHy2fh-1_mJ7s-ZbjxNFRsUOL05iExpw6Sn5RTNK5BOht-h9Te1uLk6ui_yaJiv/s1600/heart.png"/> in Kalahandi 
+</footer>
+
+<!-- ScrollReveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+
+/* Scroll Animations */
+
+ScrollReveal({
+
+distance:"60px",
+duration:1200,
+delay:200,
+reset:false
+
+});
+
+ScrollReveal().reveal(".profile",{origin:"top"});
+
+ScrollReveal().reveal(".section-title",{origin:"left"});
+
+ScrollReveal().reveal(".project",{origin:"bottom",interval:200});
+
+ScrollReveal().reveal("footer",{origin:"bottom"});
+
+</script>
+
+<script>
+
+/* Odia Rain */
+
+const canvas=document.getElementById("matrix");
+const ctx=canvas.getContext("2d");
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+const letters="ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯରଲଶଷସହ";
+
+const chars=letters.split("");
+
+const fontSize=18;
+const columns=Math.floor(canvas.width/fontSize);
+
+const drops=new Array(columns).fill(1);
+
+function draw(){
+
+ctx.fillStyle="rgba(10,15,28,0.07)";
+ctx.fillRect(0,0,canvas.width,canvas.height);
+
+ctx.fillStyle="#00f7ff";
+ctx.font=fontSize+"px Noto Sans Oriya";
+
+for(let i=0;i<drops.length;i++){
+
+const text=chars[Math.floor(Math.random()*chars.length)];
+
+ctx.fillText(text,i*fontSize,drops[i]*fontSize);
+
+if(drops[i]*fontSize>canvas.height && Math.random()>0.975){
+drops[i]=0;
+}
+
+drops[i]++;
+
+}
+
+}
+
+setInterval(draw,40);
+
+</script>
+
+<script>
+
+/* AI particles */
+
+tsParticles.load("particles",{
+
+particles:{
+number:{value:70},
+color:{value:"#00f7ff"},
+links:{
+enable:true,
+distance:140,
+color:"#00f7ff",
+opacity:.3
+},
+move:{
+enable:true,
+speed:1.2
+},
+size:{
+value:{min:1,max:3}
+}
+}
+
+});
+
+</script>    
+</body>
+</html>
